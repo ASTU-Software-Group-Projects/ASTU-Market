@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739614749674",
+    "project_id": "astu-market",
+    "storage_bucket": "astu-market.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739614749674:android:afa320c85d31087e283893",
+        "android_client_info": {
+          "package_name": "com.market.astu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBusfHGdibllNWvoHEGPOg0MqH4EbBRujg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
