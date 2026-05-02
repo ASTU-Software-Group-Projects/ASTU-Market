@@ -5,6 +5,13 @@
 
 ---
 
+## 🎬 App Demo
+
+Watch the ASTU Market in action:  
+[**▶️ Click here to watch the Video Demo**](https://res.cloudinary.com/dvzabjt2a/video/upload/v1777720716/Astu_Mar_ajesch.mp4)
+
+---
+
 ## 🚀 Key Features
 
 ### 👥 Role-Based Experience
@@ -118,4 +125,3 @@ The app uses **Zxing** for high-performance QR code processing. This is used for
 - Verifying order deliveries between buyers and sellers.
 
 ---
-
