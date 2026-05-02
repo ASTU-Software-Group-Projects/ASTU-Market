@@ -1,70 +1,121 @@
-# ASTU Market – Campus Commerce App
+# 🛒 ASTU Market – Campus Commerce App
 
-A complete Android marketplace app built with Jetpack Compose, Firebase (Auth + Firestore), Hilt DI, and QR scanning (Zxing / CameraX).
+![ASTU Market Banner](astu_market_banner_1777705213884.png)
 
-Development is split into **six parts** that can be built in parallel. Each part has its own `PART*.md` file explaining the exact scope, public API (function signatures), and integration notes.
+**ASTU Market** is a comprehensive Android marketplace designed specifically for the Adama Science and Technology University (ASTU) community. It empowers students to buy and sell goods within the campus ecosystem, featuring a secure wallet, role-based interfaces, and integrated delivery tracking.
 
-## Parts overview
+---
 
-| Part | Focus | Consumed by |
+## 🚀 Key Features
+
+### 👥 Role-Based Experience
+- **Buyer Role**: Browse products, manage a shopping cart, and track orders.
+- **Seller Role**: Manage inventory, track sales, and fulfill orders.
+- **Switching**: Users can easily transition between roles depending on their needs.
+
+### 🏠 Dynamic Dashboard
+- **Welcome Page**: Personalized greeting and quick access to active orders or featured products.
+- **Quick Actions**: Shortcuts to wallet, scanning, and top categories.
+
+### 🔍 Product Discovery
+- **Categorized Browsing**: Filter by Clothes, Electronics, Books, Stationery, and more.
+- **Advanced Search**: Find exactly what you need with real-time filtering.
+- **Product Details**: Rich descriptions, pricing, and seller information.
+
+### 💳 Secure Campus Wallet
+- **Balance Tracking**: Real-time view of your current balance.
+- **Peer-to-Peer Transfers**: Send money to other students instantly using QR codes.
+- **Airtime & Vouchers**: Purchase airtime or redeem campus vouchers directly within the app.
+
+### 📦 Order & Delivery Management
+- **Tracking**: Real-time status updates for your purchases.
+- **Seller Inventory**: Sellers can add, edit, or remove products from their shop.
+- **Delivery Verification**: QR-based verification to ensure safe and successful handoffs.
+
+---
+
+## 🛠 Tech Stack
+
+- **Core**: [Kotlin](https://kotlinlang.org/)
+- **UI Framework**: [Jetpack Compose](https://developer.android.com/jetpack/compose) (100% Declarative UI)
+- **Dependency Injection**: [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
+- **Backend**: [Firebase](https://firebase.google.com/) (Authentication & Cloud Firestore)
+- **QR Scanning**: [Zxing-embedded](https://github.com/journeyapps/zxing-android-embedded) / CameraX
+- **Asynchronous Flow**: Kotlin Coroutines & Flow
+
+---
+
+## 📂 Project Structure
+
+```text
+app/src/main/java/com/market/astu/
+├── data/
+│   ├── model/          # Data classes (User, Product, Wallet, Order)
+│   └── repository/     # Firestore & Auth repositories
+├── di/                 # Hilt Modules for dependency injection
+├── ui/
+│   ├── navigation/     # NavGraph & AuthenticatedApp structure
+│   ├── screens/        # Screen-specific Composables (Auth, Home, Wallet, etc.)
+│   ├── common/         # Shared UI components (TopBar, BottomDock, Backdrop)
+│   └── theme/          # Design system (Color, Typography, Theme)
+└── util/               # Helpers (Pricing, Validation, Formatting)
+```
+
+---
+
+## 🗺 Development Roadmap
+
+The project is structured into six parallel parts to streamline development:
+
+| Part | Focus | Description |
 |------|-------|-------------|
-| 1 | Backend & Data Layer | All other parts |
-| 2 | Auth & Onboarding UI | None (uses Part 1) |
-| 3 | Home, Discover, Product Detail UI | None (uses Part 1) |
-| 4 | Wallet, Send/Receive, Airtime & Voucher UI | None (uses Part 1) |
-| 5 | Cart, Orders & Delivery UI | None (uses Part 1) |
-| 6 | Seller Inventory, Profile, Common Components & Theme | All UI parts |
+| [Part 1](./PART1.md) | **Backend & Data** | Firestore schemas, Repositories, and Data Models. |
+| [Part 2](./PART2.md) | **Auth & Onboarding** | Sign-in, Sign-up, and Role selection flow. |
+| [Part 3](./PART3.md) | **Home & Discovery** | Product listings, Search, and Detail views. |
+| [Part 4](./PART4.md) | **Wallet & Payments** | Balance, Transfers, and QR Voucher scanning. |
+| [Part 5](./PART5.md) | **Cart & Orders** | Checkout process and Order timeline tracking. |
+| [Part 6](./PART6.md) | **Seller & Common** | Inventory management and shared UI components. |
 
-## How to use these docs
+---
 
-- Each `PART*.md` file defines the exact responsibilities for one team member.
-- The **Public API** sections list the functions / composables that other parts will call. These are the **contracts** between team members.
-- Start with Part 1 – all UI parts depend on the repositories defined there.
+## 📱 Visual Gallery
 
-## Part files
+### 🔐 Authentication & Setup
+| Sign In | Seller: Post Product |
+|:---:|:---:|
+| ![Sign In](https://i.8upload.com/image/9bad2c4b887b824a/sign-in.jpg) | ![Seller Post](https://i.8upload.com/image/d741c55d25e27534/sellers-post-product.jpg) |
 
-- [Part 1 – Backend & Data Layer](./PART1.md)
-- [Part 2 – Auth & Onboarding UI](./PART2.md)
-- [Part 3 – Home, Discover, Product Detail UI](./PART3.md)
-- [Part 4 – Wallet, Send/Receive, Airtime & Voucher UI](./PART4.md)
-- [Part 5 – Cart, Orders & Delivery UI](./PART5.md)
-- [Part 6 – Seller Inventory, Profile, Common Components & Theme](./PART6.md)
+### 🏠 App Experience (Light vs. Dark)
 
-## Build & run
+| Feature | Light Mode | Dark Mode |
+|:---:|:---:|:---:|
+| **Dashboard** | ![Dashboard Light](https://i.8upload.com/image/98cdb06b8ea41684/dashboard.jpg) | ![Dashboard Dark](https://i.8upload.com/image/cacb22f58560269a/dashboard-dark.jpg) |
+| **Discovery** | ![Discovery Light](https://i.8upload.com/image/80d85a2f69fb3f97/discovery.jpg) | ![Discovery Dark](https://i.8upload.com/image/d23384e5faa011d9/discovery-dark.jpg) |
+| **Wallet** | ![Wallet Light](https://i.8upload.com/image/873b0637ecdfb735/wallet.jpg) | ![Wallet Dark](https://i.8upload.com/image/9731264c5221bcde/wallet-dark.jpg) |
+| **Account** | ![Account Light](https://i.8upload.com/image/3340f5ae4147cc9f/account.jpg) | ![Account Dark](https://i.8upload.com/image/16b7bb429ee13775/account-dark.jpg) |
 
-1. Clone the repository.
-2. Open the project in Android Studio.
-3. Add your own `google-services.json` (Firebase project).
-4. Sync Gradle and run on device/emulator (min SDK 24).
+---
 
-## Project structure (simplified)
+## ⚙️ Setup & Installation
 
-    app/src/main/java/com/market/astu/
-    ├── data/
-    │   ├── model/          # All data classes (User, Product, Wallet, etc.)
-    │   └── repository/     # Firestore & Auth repositories
-    ├── di/                 # Hilt module
-    ├── ui/
-    │   ├── navigation/     # NavGraph, AuthenticatedApp, QuickActions
-    │   ├── screens/
-    │   │   ├── auth/       # SignIn, SignUp
-    │   │   ├── cart/       # Shopping cart & checkout
-    │   │   ├── delivery/   # Gig board, delivery verification
-    │   │   ├── detail/     # Product detail
-    │   │   ├── discover/   # Browse / search products
-    │   │   ├── home/       # Home screen
-    │   │   ├── orders/     # Order timeline
-    │   │   ├── profile/    # User profile
-    │   │   ├── seller/     # Seller inventory
-    │   │   └── wallet/     # Wallet, send/receive, airtime, voucher scan
-    │   ├── common/         # Shared Composables (TopBar, BottomDock, Backdrop...)
-    │   └── theme/          # Color, Typography, Theme
-    └── util/               # Helper functions (formatting, pricing, validation)
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/yourusername/ASTU-Market.git
+   ```
+2. **Firebase Configuration**:
+   - Create a new project in the [Firebase Console](https://console.firebase.google.com/).
+   - Enable **Email/Password Auth** and **Cloud Firestore**.
+   - Download your `google-services.json` and place it in the `app/` directory.
+3. **Build**:
+   - Open in Android Studio (Ladybug or newer recommended).
+   - Sync Gradle and run on a device/emulator (Min SDK 24).
 
-## Reference
+---
 
-- [Firebase Authentication](https://firebase.google.com/docs/auth)
-- [Cloud Firestore](https://firebase.google.com/docs/firestore)
-- [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
-- [Jetpack Compose](https://developer.android.com/jetpack/compose)
-- [Zxing-embedded (QR scanning)](https://github.com/journeyapps/zxing-android-embedded)
+## 📸 QR Scanning
+The app uses **Zxing** for high-performance QR code processing. This is used for:
+- Peer-to-peer wallet transfers.
+- Redeeming airtime vouchers.
+- Verifying order deliveries between buyers and sellers.
+
+---
