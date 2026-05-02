@@ -119,4 +119,3 @@ The app uses **Zxing** for high-performance QR code processing. This is used for
 
 ---
 
-*Developed for the ASTU Community.*
