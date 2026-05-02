@@ -1,6 +1,5 @@
 # 🛒 ASTU Market – Campus Commerce App
 
-![ASTU Market Dashboard](https://i.8upload.com/image/98cdb06b8ea41684/dashboard.jpg)
 
 **ASTU Market** is a comprehensive Android marketplace designed specifically for the Adama Science and Technology University (ASTU) community. It empowers students to buy and sell goods within the campus ecosystem, featuring a secure wallet, role-based interfaces, and integrated delivery tracking.
 
