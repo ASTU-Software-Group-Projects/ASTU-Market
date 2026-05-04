@@ -594,4 +594,4 @@ private fun timeAwareGreeting(): String {
         in 17..21 -> "Good evening"
         else -> "Welcome back"
     }
-}.
+}
