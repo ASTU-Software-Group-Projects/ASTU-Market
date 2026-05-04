@@ -1,5 +1,4 @@
 package com.market.astu.ui.screens.detail
-package com.market.astu.ui.screens.detail
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
