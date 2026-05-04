@@ -1,5 +1,4 @@
 package com.market.astu.ui.screens.home
-package com.market.astu.ui.screens.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
