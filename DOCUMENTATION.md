@@ -28,7 +28,6 @@ This is not just a marketplace. It is a campus commerce ecosystem — one that u
 - [Known Limitations and Future Work](#-known-limitations-and-future-work)
 - [Contributing](#-contributing)
 - [Team](#-team)
-- [License](#-license)
 
 ---
 
