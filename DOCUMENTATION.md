@@ -907,18 +907,18 @@ All pull requests require at least one approving review from a team lead before 
 
 ## 👥 Team
 
-ASTU Market was designed and built as a group software engineering project by students of **Adama Science and Technology University**, Department of Software Engineering.
+Built by students of **Adama Science and Technology University**.
 
-Each team member owned one or more development tracks end-to-end — from database schema through UI implementation and testing. The parallel track structure meant every person had deep ownership of a complete vertical slice of the system rather than being responsible for a single horizontal layer.
+Each member owned a complete development track from planning and implementation to testing and integration.
 
 | Member | Track | Responsibilities |
 |---|---|---|
-| (Team Lead) | Architecture & Integration | System design, Hilt setup, final integration, CI/CD |
-| Member 2 | Backend & Data (Part 1) | Firestore schema, security rules, repositories, data models |
-| Member 3 | Auth & Onboarding (Part 2) | Firebase Auth, sign-in/up flows, session management |
-| Member 4 | Home & Discovery (Part 3) | Home screen, categories, search, product detail |
-| Member 5 | Wallet & Payments (Part 4) | Wallet UI, QR transfer, vouchers, transaction history |
-| Member 6 | Cart & Orders (Part 5) | Cart, checkout, order lifecycle, delivery QR |
-| Member 7 | Seller & Common (Part 6) | Seller dashboard, inventory, shared components, theme |
+| Team Lead | Architecture & Integration | System design, Hilt setup, final integration, CI/CD |
+| Member 2 | Backend & Data | Firestore schema, security rules, repositories, data models |
+| Member 3 | Auth & Onboarding | Firebase Auth, sign-in/up flows, session management |
+| Member 4 | Home & Discovery | Home screen, categories, search, product detail |
+| Member 5 | Wallet & Payments | Wallet UI, QR transfer, vouchers, transaction history |
+| Member 6 | Cart, Orders & Seller Tools | Cart, checkout, order lifecycle, seller dashboard, inventory, shared UI |
+
 
 ---
