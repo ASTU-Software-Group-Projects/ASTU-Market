@@ -11,6 +11,7 @@ This is not just a marketplace. It is a campus commerce ecosystem — one that u
 ## 📋 Table of Contents
 
 - [App Demo](#-app-demo)
+- [App Experience](#-app-experience-light-vs-dark)
 - [Motivation and Background](#-motivation-and-background)
 - [Key Features](#-key-features)
 - [User Roles and Flows](#-user-roles-and-flows)
@@ -43,6 +44,32 @@ The demo walkthrough covers:
 - Wallet top-up and peer-to-peer transfer via QR code
 - Seller inventory management and order fulfillment
 - QR-based delivery verification between buyer and seller
+
+---
+
+## 🏠 App Experience (Light vs. Dark)
+
+ASTU Market is fully optimized for both **Light Mode** and **Dark Mode** to ensure a comfortable experience across different environments — whether students are browsing products during the day or checking orders late at night in dorm rooms.
+
+The UI theme automatically adapts based on the user's system settings, while still maintaining consistent branding, readability, and navigation patterns.
+
+| Feature | Light Mode | Dark Mode |
+|:---:|:---:|:---:|
+| **Dashboard** | ![Dashboard Light](https://i.8upload.com/image/98cdb06b8ea41684/dashboard.jpg) | ![Dashboard Dark](https://i.8upload.com/image/cacb22f58560269a/dashboard-dark.jpg) |
+| **Discovery** | ![Discovery Light](https://i.8upload.com/image/80d85a2f69fb3f97/discovery.jpg) | ![Discovery Dark](https://i.8upload.com/image/d23384e5faa011d9/discovery-dark.jpg) |
+| **Wallet** | ![Wallet Light](https://i.8upload.com/image/873b0637ecdfb735/wallet.jpg) | ![Wallet Dark](https://i.8upload.com/image/9731264c5221bcde/wallet-dark.jpg) |
+| **Account** | ![Account Light](https://i.8upload.com/image/3340f5ae4147cc9f/account.jpg) | ![Account Dark](https://i.8upload.com/image/16b7bb429ee13775/account-dark.jpg) |
+
+### Theme Design Goals
+
+Both themes were carefully designed with the following principles:
+
+- **Accessibility-first contrast ratios** for readability in all lighting conditions  
+- **Consistent navigation hierarchy** regardless of theme  
+- **Reduced eye strain** in dark environments with softened backgrounds and controlled accent brightness  
+- **Brand continuity** using ASTU Market's primary color palette across both themes  
+
+Dark mode is especially useful for students using the app at night, while light mode provides a clean and familiar browsing experience during daytime use.
 
 ---
 
