@@ -99,4 +99,4 @@ invalid state.
 
 ## Dependencies
 
-None – you are the foundation. All other parts depend on you.
+None
